@@ -8,7 +8,7 @@ default_dag_args = {
 }
 
 with models.DAG(
-        'composer_sample_greeting',
+        'simple',
         schedule_interval=datetime.timedelta(days=1),
         default_args=default_dag_args) as dag:
     def greeting():
